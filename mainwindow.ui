@@ -13,7 +13,47 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="vertexsCount"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="importGraph">
+      <property name="text">
+       <string>Import Graph</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelStartingVertex">
+      <property name="text">
+       <string>Starting edge</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="dijkstra">
+      <property name="text">
+       <string>Find Best Path</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QTextEdit" name="result"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelVertexCount">
+      <property name="text">
+       <string>Number of Edges</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="startingVertex"/>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
